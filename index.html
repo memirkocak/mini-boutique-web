@@ -3,12 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mini-boutique web</title>
+    <meta name="description" content="GreenMarket - Boutique en ligne de cosmétiques naturels, vêtements recyclés et accessoires zéro déchet. Consommation responsable et durable.">
+    <title>GreenMarket - Cosmétiques naturels, vêtements recyclés et accessoires zéro déchet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>mini-boutique web</h1>
+    <header class="header">
+        <div class="header-container">
+            <a href="#accueil" class="logo" aria-label="GreenMarket - Retour à l'accueil">
+                <span class="logo-icon" aria-hidden="true">🌿</span>
+                <span class="logo-text">GreenMarket</span>
+            </a>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#produits" class="nav-link">Produits</a></li>
+                </ul>
+            </nav>
+            <button class="cart-button" aria-label="Voir le panier">
+                <span class="cart-text">Panier</span>
+            </button>
+        </div>
     </header>
+
+    <main id="accueil">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Consommez responsable avec GreenMarket</h1>
+                    <p class="hero-description">
+                        Découvrez notre sélection de cosmétiques naturels, vêtements recyclés et accessoires zéro déchet. 
+                        Chaque produit est soigneusement choisi pour son impact positif sur l'environnement et votre bien-être. 
+                        Rejoignez une communauté engagée pour une consommation éthique et durable.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#produits" class="button button-primary">Découvrir nos produits</a>
+                        <a href="#engagement" class="button button-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://placehold.co/600x400/90EE90/FFFFFF?text=Produits+Eco-responsables" 
+                         alt="Collection de cosmétiques naturels GreenMarket" 
+                         width="600" 
+                         height="400">
+                </div>
+            </div>
+        </section>
+
+        <section id="engagement" class="engagement" aria-labelledby="engagement-title">
+            <section class="engagement-container">
+                <h2 id="engagement-title">Notre engagement pour une consommation responsable</h2>
+                <p class="engagement-intro">
+                    GreenMarket s'engage à vous connecter avec des produits éthiques et durables. 
+                    Notre mission est de rendre accessible une consommation responsable qui respecte l'environnement, 
+                    les producteurs et votre santé. Chaque produit est sélectionné pour sa qualité, sa traçabilité 
+                    et son impact positif.
+                </p>
+                <section class="engagement-cards">
+                    <article class="engagement-card">
+                        <div class="card-icon" aria-hidden="true">🌿</div>
+                        <h3>Produits naturels</h3>
+                        <p>
+                            Nos cosmétiques sont formulés avec des ingrédients 100% naturels et certifiés, 
+                            sans substances nocives. Nos vêtements sont confectionnés à partir de matières 
+                            recyclées ou biologiques, garantissant qualité et respect de l'environnement.
+                        </p>
+                    </article>
+                    <article class="engagement-card">
+                        <div class="card-icon" aria-hidden="true">🚚</div>
+                        <h3>Circuits courts</h3>
+                        <p>
+                            Nous privilégions les producteurs et artisans locaux dans un rayon de 100km, 
+                            réduisant ainsi notre empreinte carbone. Chaque achat soutient l'économie locale 
+                            et favorise une rémunération équitable des créateurs.
+                        </p>
+                    </article>
+                    <article class="engagement-card">
+                        <div class="card-icon" aria-hidden="true">♻️</div>
+                        <h3>Emballages durables</h3>
+                        <p>
+                            Tous nos emballages sont 100% recyclables ou compostables. Nous minimisons 
+                            les déchets plastiques et privilégions des solutions zéro déchet pour protéger 
+                            notre planète.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-title">
+                <div class="cta-card">
+                    <span class="cta-icon" aria-hidden="true">🛍️</span>
+                    <h2 id="cta-title">Prêt à consommer autrement ?</h2>
+                    <p class="cta-description">
+                        Rejoignez des milliers de personnes qui ont choisi une consommation responsable. 
+                        Découvrez notre sélection de cosmétiques naturels, vêtements recyclés et accessoires zéro déchet, 
+                        soigneusement choisis pour leur qualité et leur impact positif.
+                    </p>
+                    <a href="#produits" class="button button-primary button-large">
+                        <span>Explorer nos produits</span>
+                    </a>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon" aria-hidden="true">🌿</span>
+                    <span class="logo-text">GreenMarket</span>
+                </div>
+                <p class="footer-mission">
+                    GreenMarket s'engage pour une consommation durable et responsable. 
+                    Cosmétiques naturels, vêtements recyclés et accessoires zéro déchet pour un mode de vie éthique.
+                </p>
+            </div>
+            <nav class="footer-nav" aria-label="Navigation du pied de page">
+                <div class="footer-nav-column">
+                    <h3 class="footer-nav-title">Navigation</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="#accueil" class="footer-link">Accueil</a></li>
+                        <li><a href="#produits" class="footer-link">Nos produits</a></li>
+                        <li><a href="#engagement" class="footer-link">À propos</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3 class="footer-nav-title">Informations légales</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="#mentions" class="footer-link">Mentions légales</a></li>
+                        <li><a href="#confidentialite" class="footer-link">Politique de confidentialité</a></li>
+                        <li><a href="#cookies" class="footer-link">Gestion des cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3 class="footer-nav-title">Nous suivre</h3>
+                    <ul class="footer-nav-list">
+                        <li>
+                            <a href="https://facebook.com" class="footer-link" target="_blank" aria-label="Suivez-nous sur Facebook">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" class="footer-link" target="_blank" aria-label="Suivez-nous sur Instagram">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" class="footer-link" target="_blank" aria-label="Suivez-nous sur Twitter">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@greenmarket.fr" class="footer-link" aria-label="Contactez-nous par email">
+                                contact@greenmarket.fr
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="footer-copyright">© 2026 GreenMarket. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
