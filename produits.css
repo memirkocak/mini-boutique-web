@@ -80,3 +80,8 @@
     font-size: 1rem;
     margin-bottom: 0.75rem;
 }
+
+.product-image{
+    width: 300px;
+    height: 300px;
+}
