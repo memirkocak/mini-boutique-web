@@ -71,7 +71,7 @@ function createProductCard(product) {
     productPrice.textContent = `${product.price} € `;
     
     const productButton = document.createElement('a');
-    productButton.href = `#produit-${product.id}`;
+    productButton.href = `produit-detail.html?id=${product.id}`;
     productButton.className = 'button button-primary button-product';
     productButton.textContent = 'Voir le produit';
     
