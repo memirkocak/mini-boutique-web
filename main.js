@@ -53,6 +53,7 @@ function createProductCard(product) {
     image.src = product.image;
     image.alt = product.title;
     image.className = 'product-image';
+    image.loading = 'lazy';
     
     imageWrapper.appendChild(image);
     
