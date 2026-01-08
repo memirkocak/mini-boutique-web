@@ -26,15 +26,15 @@ select:focus-visible {
 
 .header {
     background-color: #ffffff;
-    padding: 1rem 18rem;
+    padding: 1rem 1rem;
 }
 
 .header-container {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .logo {
@@ -56,7 +56,6 @@ select:focus-visible {
 }
 
 .main-nav {
-    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -64,7 +63,8 @@ select:focus-visible {
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .nav-link {
@@ -74,7 +74,6 @@ select:focus-visible {
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.2s;
 }
 
 .nav-link:hover {
@@ -94,7 +93,8 @@ select:focus-visible {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.1s;
+    width: 100%;
+    justify-content: center;
 }
 
 .cart-button:hover {
@@ -107,15 +107,15 @@ select:focus-visible {
 
 .hero {
     background-color: #e8f5e9;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .hero-container {
     margin: 0 auto;
-    padding: 0 18rem;
+    padding: 0 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -126,21 +126,20 @@ select:focus-visible {
 }
 
 #hero-title {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: bold;
     color: #2c3e2d;
-    line-height: 1.2;
 }
 
 .hero-description {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #2c3e2d;
 }
 
 .hero-buttons {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -161,7 +160,7 @@ select:focus-visible {
     font-weight: 500;
     text-align: center;
     cursor: pointer;
-    transition: 0.1s;
+    width: 100%;
 }
 
 .button-primary {
@@ -190,16 +189,16 @@ select:focus-visible {
 
 .engagement {
     background-color: #ffffff;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .engagement-container {
     margin: 0 auto;
-    padding: 0 18rem;
+    padding: 0 1rem;
 }
 
 #engagement-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #2c3e2d;
     text-align: center;
@@ -207,16 +206,16 @@ select:focus-visible {
 }
 
 .engagement-intro {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #2c3e2d;
     text-align: center;
-    margin: 0 1rem 3rem;
+    margin: 0 0 2rem 0;
 }
 
 .engagement-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .engagement-card {
@@ -245,12 +244,12 @@ select:focus-visible {
 
 .cta {
     background-color: #faf9f6;
-    padding: 5rem 25rem;
+    padding: 3rem 1rem;
 }
 
 .cta-card {
     background-color: #ffffff;
-    padding: 3rem;
+    padding: 2rem 1.5rem;
     border-radius: 8px;
     text-align: center;
     margin: 0 auto;
@@ -262,7 +261,7 @@ select:focus-visible {
 }
 
 #cta-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #2c3e2d;
     margin-bottom: 1.5rem;
@@ -283,15 +282,15 @@ select:focus-visible {
 .footer {
     background-color: #2c3e2d;
     color: #ffffff;
-    padding: 3rem 0 1rem;
+    padding: 2rem 0 1rem;
 }
 
 .footer-container {
     margin: 0 auto;
-    padding: 0 18rem;
+    padding: 0 1rem;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -321,8 +320,8 @@ select:focus-visible {
 
 .footer-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .footer-nav-title {
@@ -348,9 +347,10 @@ select:focus-visible {
 
 .footer-bottom-container {
     margin: 0 auto;
-    padding: 0 17rem;
+    padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     gap: 1rem;
 }
@@ -358,7 +358,6 @@ select:focus-visible {
 .footer-copyright {
     font-size: 1rem;
     color: #ffffff;
-    opacity: 0.8;
 }
 
 .footer-accessibility {
@@ -370,41 +369,41 @@ select:focus-visible {
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
-    opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
     .header {
-        padding: 1rem 1rem;
+        padding: 1rem 18rem;
     }
 
     .header-container {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
     }
 
     .nav-list {
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .cart-button {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 2rem 0;
-    }
-
-    .hero-container {
-        padding: 0 1rem;
-        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
+    .cart-button {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-container {
+        padding: 0 18rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
     #hero-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
 
     .hero-description {
@@ -412,65 +411,66 @@ select:focus-visible {
     }
 
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .button {
-        width: 100%;
+        width: auto;
     }
 
     .engagement {
-        padding: 3rem 0;
+        padding: 5rem 0;
     }
 
     .engagement-container {
-        padding: 0 1rem;
+        padding: 0 18rem;
     }
 
     #engagement-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .engagement-intro {
         font-size: 1rem;
-        margin: 0 0 2rem 0;
+        margin: 0 1rem 3rem;
     }
 
     .engagement-cards {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .cta {
-        padding: 3rem 1rem;
-    }
-
-    .cta-card {
-        padding: 2rem 1.5rem;
-    }
-
-    #cta-title {
-        font-size: 1.5rem;
-    }
-
-    .footer {
-        padding: 2rem 0 1rem;
-    }
-
-    .footer-container {
-        padding: 0 1rem;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
+    .cta {
+        padding: 5rem 25rem;
+    }
+
+    .cta-card {
+        padding: 3rem;
+    }
+
+    #cta-title {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 3rem 0 1rem;
+    }
+
+    .footer-container {
+        padding: 0 18rem;
+        grid-template-columns: 2fr 3fr;
+        gap: 3rem;
+    }
+
     .footer-nav {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 
     .footer-bottom-container {
-        padding: 0 1rem;
-        flex-direction: column;
-        text-align: center;
+        padding: 0 17rem;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
     }
 }
