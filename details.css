@@ -66,3 +66,47 @@ main {
     padding: 1rem;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 0;
+    }
+
+    #product-detail {
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #product-image {
+        height: auto;
+        padding: 2rem;
+    }
+
+    #product-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #product-title {
+        font-size: 1.5rem;
+    }
+
+    #product-category {
+        font-size: 0.9rem;
+    }
+
+    #product-description {
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    #product-price {
+        font-size: 2rem;
+    }
+
+    #product-rating {
+        font-size: 0.9rem;
+    }
+}

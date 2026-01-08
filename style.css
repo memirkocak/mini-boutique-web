@@ -361,3 +361,105 @@ body {
     font-size: 1rem;
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-list {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .cart-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero-container {
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .engagement {
+        padding: 3rem 0;
+    }
+
+    .engagement-container {
+        padding: 0 1rem;
+    }
+
+    #engagement-title {
+        font-size: 1.5rem;
+    }
+
+    .engagement-intro {
+        font-size: 1rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .engagement-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cta {
+        padding: 3rem 1rem;
+    }
+
+    .cta-card {
+        padding: 2rem 1.5rem;
+    }
+
+    #cta-title {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-container {
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-nav {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-bottom-container {
+        padding: 0 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
