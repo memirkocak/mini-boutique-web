@@ -44,6 +44,7 @@ function filterProductsByCategory(category) {
 function createProductCard(product) {
     const article = document.createElement('article');
     article.className = 'product-card';
+    article.setAttribute('aria-label', `Produit : ${product.title}, ${product.price} €`);
     
     const imageWrapper = document.createElement('div');
     imageWrapper.className = 'product-image-wrapper';
@@ -68,11 +69,13 @@ function createProductCard(product) {
     
     const productPrice = document.createElement('span');
     productPrice.className = 'product-price';
+    productPrice.setAttribute('aria-label', `Prix : ${product.price} euros`);
     productPrice.textContent = `${product.price} € `;
     
     const productButton = document.createElement('a');
     productButton.href = `produit-detail.html?id=${product.id}`;
     productButton.className = 'button button-primary button-product';
+    productButton.setAttribute('aria-label', `Voir les détails du produit ${product.title}`);
     productButton.textContent = 'Voir le produit';
     
     productInfo.appendChild(productName);

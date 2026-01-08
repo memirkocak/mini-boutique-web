@@ -3,6 +3,11 @@ main {
     background-color: #ffffff;
 }
 
+.product-detail-back {
+    margin: 0 auto 2rem;
+    padding: 0 18rem;
+}
+
 #product-detail {
     padding: 0 18rem;
     display: grid;
@@ -70,6 +75,11 @@ main {
 @media (max-width: 768px) {
     main {
         padding: 2rem 0;
+    }
+
+    .product-detail-back {
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
     }
 
     #product-detail {

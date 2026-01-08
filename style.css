@@ -12,6 +12,17 @@ body {
     color: #2c3e2d;
     background-color: #ffffff;
 }
+a:focus,
+button:focus,
+select:focus {
+    outline: 3px solid #4a7c59;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #4a7c59;
+}
 
 .header {
     background-color: #ffffff;
