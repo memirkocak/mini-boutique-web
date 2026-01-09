@@ -10,10 +10,10 @@ Maquette Figma : https://www.figma.com/design/WYUSv7WxEyYVcjhtmNZEfT/mini-boutiq
 Lien github : https://github.com/memirkocak/mini-boutique-web
 
 1. Cloner ou télécharger le projet
-2. Ouvrir le dossier dans un terminal puis "lancement"
 
 ##  Lancement
 
+Ouvrir le projet sur vscode
 Lancer le projet avec l'extention "live server"
 
 ## Version déployée
