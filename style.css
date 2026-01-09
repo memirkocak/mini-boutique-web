@@ -276,6 +276,10 @@ select:focus-visible {
     font-size: 1.8rem;
 }
 
+.footer-logo .logo-text {
+    color: #ffffff;
+}
+
 .footer-mission {
     font-size: 1rem;
     color: #ffffff;
