@@ -48,7 +48,10 @@ select:focus-visible {
 }
 
 .logo-icon {
-    font-size: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: contain;
+    display: block;
 }
 
 .logo-text {
@@ -228,6 +231,15 @@ select:focus-visible {
 .card-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon-image {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
 }
 
 .engagement-card h3 {
@@ -273,7 +285,10 @@ select:focus-visible {
 }
 
 .footer-logo .logo-icon {
-    font-size: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: contain;
+    display: block;
 }
 
 .footer-logo .logo-text {
@@ -310,6 +325,11 @@ select:focus-visible {
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
+}
+
+.footer-bottom {
+    background-color: #2c3e2d;
+    padding: 1rem 0;
 }
 
 .footer-bottom-container {

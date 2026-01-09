@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header-container">
             <a href="index.html" class="logo" aria-label="GreenMarket - Retour à l'accueil">
-                <span class="logo-icon" aria-hidden="true">🌿</span>
+                <img src="images/logo.png" alt="Logo GreenMarket" class="logo-icon" aria-hidden="true">
                 <span class="logo-text">GreenMarket</span>
             </a>
             <nav class="main-nav" aria-label="Navigation principale">
@@ -40,11 +40,11 @@
 
         <section class="products-section" aria-labelledby="products-title">
             <div class="products-container">
-                <div class="products-header">
-                    <div class="products-title-group">
+                <section class="products-header">
+                    <hgroup class="products-title-group">
                         <h2 id="products-title">Tous nos produits</h2>
-                    </div>
-                    <div class="products-sort">
+                    </hgroup>
+                    <form class="products-sort">
                         <label for="sort-select" class="sort-label">Trier par :</label>
                         <select id="sort-select" name="sort" class="sort-select" aria-label="Trier les produits">
                             <option value="all">Tous nos produits</option>
@@ -53,8 +53,8 @@
                             <option value="jewelery">jewelery</option>
                             <option value="electronics">electronics</option>
                         </select>
-                    </div>
-                </div>
+                    </form>
+                </section>
 
                 <div class="products-grid">
                     
@@ -66,10 +66,10 @@
     <footer class="footer">
         <div class="footer-container">
             <section class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-icon" aria-hidden="true">🌿</span>
+                <hgroup class="footer-logo">
+                    <img src="images/logo.png" alt="Logo GreenMarket" class="logo-icon" aria-hidden="true">
                     <span class="logo-text">GreenMarket</span>
-                </div>
+                </hgroup>
                 <p class="footer-mission">
                     GreenMarket s'engage pour une consommation durable et responsable. 
                     Cosmétiques naturels, vêtements recyclés et accessoires zéro déchet pour un mode de vie éthique.
@@ -90,9 +90,11 @@
                 </section>
             </nav>
         </div>
+        <section class="footer-bottom">
             <div class="footer-bottom-container">
                 <p class="footer-copyright">© 2026 GreenMarket. Tous droits réservés.</p>
             </div>
+        </section>
     </footer>
     <script src="main.js"></script>
 </body>
